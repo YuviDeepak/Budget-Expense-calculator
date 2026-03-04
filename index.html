@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="ss">
+            <div class="box">
+                <h1 class="header">Budget form</h1>
+                <div class="expen">
+                    <div class="exnm tag">
+                        <input type="text" placeholder="Enter the name of the expenses or budget" id="expName">
+                        <div class="error nameError"></div>
+                    </div>
+
+                    <div class="sc tag">
+                        <select name="" id="type">
+                            <option value="">Select</option>
+                            <option value="Budget">Budget</option>
+                            <option value="Expenses">Expenses</option>
+                        </select>
+                        <div class="error categoryError"></div>
+                    </div>
+                    <div class="at tag">
+                        <input type="number" placeholder="Enter the amount" id="expAmount">
+                        <div class="error amountError"></div>
+                    </div>
+                    <div class="but ">
+                        <button type="button" id="Expensessubmit">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ccaatt">
+                <select name="" id="Filter">
+                    <option selected value="">All</option>
+                    <option value="Budget">Budget</option>
+                    <option value="Expenses">Expenses</option>
+                </select>
+                <button type="button" id="print">Print</button>
+            </div>
+            <div class="tbh">
+                <table cellspacing="0">
+                    <thead>
+                        <tr id="thd">
+                            <th>S.No</th>
+                            <th>Category</th>
+                            <th>Name</th>
+                            <th class="bbdd">Budget Amount</th>
+                            <th class="eexx">Expenses Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+   
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
